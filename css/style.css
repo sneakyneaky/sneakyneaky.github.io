@@ -252,7 +252,10 @@ section.section table img {
   border-color: #323232 transparent transparent transparent;
   margin: 0 auto;
   cursor: pointer;
+  -webkit-animation: tada 1s ease;
+  animation: tada 1s ease;
 }
+
 
 /* animations */
 
