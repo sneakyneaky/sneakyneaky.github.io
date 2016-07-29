@@ -90,7 +90,7 @@ section.section table img {
   content: '.';
   color: transparent;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
   transform: translate(-50%, 0);
 }
