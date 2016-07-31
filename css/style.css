@@ -313,6 +313,10 @@ section.section table img {
   }
 }
 
+#s2 {
+  background: url('../img/background2.jpg') no-repeat 50% 50% / cover;
+}
+
 #s3 h1 {
   text-align: center;
 }
