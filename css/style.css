@@ -133,17 +133,17 @@ section.section table img {
 
 /* SLIDE 4 */
 
-.postacie {
+.particles {
   text-align:center;
 }
 
-.postacie > div:hover {
+.particles > div:hover {
   transform:scale(1.2);
   opacity: 1;
   transition: all 1s;
 }
 
-.postacie > div {
+.particles > div {
   display: inline-block;
   height: 100%;
   background-position: 50% 50%;
@@ -154,24 +154,24 @@ section.section table img {
   transition: all 1s;
 }
 
-.c1 {
+.mainparticles .particles > .c1 {
   background-image: url('http://i.imgur.com/fHaKbse.png');
   width: 10%;
 }
 
-.c2 {
+.mainparticles .particles > .c2 {
   background-image: url("http://i.imgur.com/uz2XCjs.png");
   width: 8%;
   margin-left: -0.4%;
 }
 
-.c3 {
+.mainparticles .particles > .c3 {
   background-image: url("http://i.imgur.com/CYIZx1n.png");
   width: 10%;
   margin-left: -3.7%;
 }
 
-.c4 {
+.mainparticles .particles > .c4 {
   background-image: url("http://i.imgur.com/PoFFeDJ.png");
   width: 6%;
   margin-left: -3.6%;
@@ -179,25 +179,25 @@ section.section table img {
   margin-bottom: 6%;
 }
 
-.c5 {
+.mainparticles .particles > .c5 {
   background-image: url("http://i.imgur.com/sazQmOy.png");
   width: 10%;
   margin-left: -3.5%;
 }
 
-.c6 {
+.mainparticles .particles > .c6 {
   background-image: url("http://i.imgur.com/8Bs9zj3.png");
   width: 14%;
   margin-left: -3.7%;
 }
 
-.c7 {
+.mainparticles .particles > .c7 {
   background-image: url("http://i.imgur.com/nIGtnQU.png");
   width: 9%;
   margin-left: -2.5%;
 }
 
-.c8 {
+.mainparticles .particles > .c8 {
   background-image: url("http://i.imgur.com/vkwoJy1.png");
   width: 9%;
   height: 49% !important;
@@ -205,31 +205,31 @@ section.section table img {
   margin-left: -2.2%;
 }
 
-.c9 {
+.mainparticles .particles > .c9 {
   background-image: url("http://i.imgur.com/3Zy3arQ.png");
   width: 6%;
   height: 46% !important;
   margin-left: -6.9%;
 }
 
-.c10 {
+.mainparticles .particles > .c10 {
   background-image: url("http://i.imgur.com/v8XyCNG.png");
   width: 8%;
   margin-left: -1%;
 }
 
-.box{
+.ratio {
   position: relative;
   width: 120%;		/* desired width */
 }
 
-.box:before{
+.ratio:before {
   content: "";
   display: block;
   padding-top: 14%; 	/* ratio */
 }
 
-.postacie{
+.ratio > * {
   position:  absolute;
   top: 0;
   left: 0;
@@ -238,10 +238,16 @@ section.section table img {
 }
 
 .dual > div {
-  width: 50%;
-  display: inline-block;
+  width: 60%;
+  height: 100%;
+  display: block;
   box-sizing: border-box;
   float: left;
+}
+
+
+.dual > div:last-of-type {
+  width: 40%;
 }
 
 .triangle {
@@ -327,4 +333,56 @@ section.section table img {
 
 #s4 {
   background: transparent url('../img/middle.jpg') no-repeat 50% 50% / cover;
+}
+
+.ratio.r1-2 {
+  width: 100%;
+}
+
+.ratio.r1-2:before {
+  padding-top: 70%;
+}
+
+
+/* SLIDE 5 - PARTICLES*/
+
+#s5 .particles > div {
+  display: inline-block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  opacity: 0.6;
+  transition: all 1s;
+}
+
+#s5 .particles > .c1 {
+  background-image: url('../img/5/1.png');
+  width: 25%;
+  height: 85%;
+  margin-bottom: 15%;
+}
+
+#s5 .particles > .c2 {
+  background-image: url('../img/5/2.png');
+  width: 29%;
+  margin-left: -3%;
+}
+
+#s5 .particles > .c3 {
+  background-image: url('../img/5/3.png');
+  width: 39%;
+  height: 80%;
+  margin-left: -15%;
+  position: relative;
+  top: -40%;
+}
+
+#s5 .particles > .c4 {
+  background-image: url('../img/5/4.png');
+  width: 22%;
+  height: 60%;
+  margin-left: -13%;
+  margin-bottom: 37%;
 }
