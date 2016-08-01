@@ -126,7 +126,23 @@
        pagination: true,
        updateURL: true,
        beforeMove: function(index) {},
-       afterMove: function(index) {},
+       afterMove: function(index) {
+         if(index>=5 && index<=9) {
+          var elements = document.querySelector('#s'+index+' .particles').children;
+          var iterator = 0;
+          var particlesTimer = setInterval(function() {
+            console.log('interval');
+            if(iterator<elements.length) {
+              console.log(iterator);
+              elements[iterator].classList.add('bounceIn');
+              elements[iterator].style.opacity = '0.6';
+              iterator++;
+            } else {
+              clearInterval(particlesTimer);
+            }
+          }, 100)
+         }
+       },
        loop: true,
        keyboard: true,
        responsiveFallback: false
