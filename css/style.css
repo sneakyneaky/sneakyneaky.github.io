@@ -237,14 +237,24 @@ section.section table img {
   right: 0;
 }
 
+.dual {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .dual > div {
   width: 60%;
-  height: 100%;
+  display: flex;
   display: block;
   box-sizing: border-box;
   float: left;
 }
 
+.dual > div:first-of-type > * {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
 
 .dual > div:last-of-type {
   width: 40%;
