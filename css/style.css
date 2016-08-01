@@ -244,16 +244,15 @@ section.section table img {
 
 .dual > div {
   width: 60%;
-  display: flex;
   display: block;
   box-sizing: border-box;
   float: left;
 }
 
-.dual > div:first-of-type > * {
-  position: relative;
-  top: 50%;
-  transform: translate(0, -50%);
+.dual > div:first-of-type > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dual > div:last-of-type {
@@ -379,8 +378,7 @@ section.section table img {
   width: 39%;
   height: 80%;
   margin-left: -15%;
-  position: relative;
-  top: -40%;
+  margin-bottom: 27%;
 }
 
 #s5 .particles > .c4 {
