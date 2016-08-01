@@ -86,12 +86,14 @@
       <section class="section" id="s5">
         <div class="middle wide dual imgs">
           <div>
-            <div class="ratio r1-2">
-              <div class="particles">
-                <div class="c1"></div>
-                <div class="c2"></div>
-                <div class="c3"></div>
-                <div class="c4"></div>
+            <div>
+              <div class="ratio r1-2">
+                <div class="particles">
+                  <div class="c1"></div>
+                  <div class="c2"></div>
+                  <div class="c3"></div>
+                  <div class="c4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -119,6 +121,10 @@
       </section>
     </div>
     <script type="text/javascript">
+      var visitedPages = [0, 0, 0, 0, 0];
+      for (var i = 0; i < visitedPages.length; i++) {
+        visitedPages[i] = false;
+      }
       onePageScroll("#fullpage", {
        sectionContainer: ".section",
        easing: "ease",
@@ -127,20 +133,21 @@
        updateURL: true,
        beforeMove: function(index) {},
        afterMove: function(index) {
-         if(index>=5 && index<=9) {
-          var elements = document.querySelector('#s'+index+' .particles').children;
-          var iterator = 0;
-          var particlesTimer = setInterval(function() {
-            console.log('interval');
-            if(iterator<elements.length) {
-              console.log(iterator);
-              elements[iterator].classList.add('bounceIn');
-              elements[iterator].style.opacity = '0.6';
-              iterator++;
-            } else {
-              clearInterval(particlesTimer);
-            }
-          }, 100)
+         if(index>=5 && index<=9 && !visitedPages[index-5]) {
+           visitedPages[index-5] = true;
+           var elements = document.querySelector('#s'+index+' .particles').children;
+           var iterator = 0;
+           var particlesTimer = setInterval(function() {
+             console.log('interval');
+             if(iterator<elements.length) {
+               console.log(iterator);
+               elements[iterator].classList.add('bounceIn');
+               elements[iterator].style.opacity = '0.6';
+               iterator++;
+             } else {
+               clearInterval(particlesTimer);
+             }
+           }, 100);
          }
        },
        loop: true,
