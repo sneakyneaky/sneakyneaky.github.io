@@ -150,8 +150,12 @@ section.section table img {
   background-size: auto 100%;
   background-repeat: no-repeat;
   transform:scale(1);
-  opacity: 0.6;
+  opacity: 0;
   transition: all 1s;
+}
+
+.mainparticles .particles > div {
+  opacity: 0.6;
 }
 
 .mainparticles .particles > .c1 {
@@ -301,8 +305,7 @@ section.section table img {
 
 /* SLIDE 5 - PARTICLES*/
 
-#s5 .particles > div {
-  height: 100%;
+.particles > div {
   opacity: 0;
 }
 
@@ -333,6 +336,38 @@ section.section table img {
   height: 60%;
   margin-left: -13%;
   margin-bottom: 37%;
+}
+
+/* SLIDE 6 - PARTICLES */
+
+#s6 .particles > .c1 {
+  background-image: url('../img/6/1.png');
+  width: 18%;
+  height: 60%;
+  margin-bottom: 20%;
+}
+
+#s6 .particles > .c2 {
+  background-image: url('../img/6/2.png');
+  width: 28%;
+  height: 80%;
+  margin-bottom: 12%;
+  margin-left: -5%;
+}
+
+#s6 .particles > .c3 {
+  background-image: url('../img/6/3.png');
+  width: 22%;
+  height: 64%;
+  margin-bottom: 12%;
+  margin-left: -3%;
+}
+
+#s6 .particles > .c4 {
+  background-image: url('../img/6/4.png');
+  width: 24%;
+  height: 75%;
+  margin-left: -3.5%;
 }
 
 /* animations */
