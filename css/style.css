@@ -159,24 +159,24 @@ section.section table img {
 }
 
 .mainparticles .particles > .c1 {
-  background-image: url('http://i.imgur.com/fHaKbse.png');
+  background-image: url('../img/main/1.png');
   width: 10%;
 }
 
 .mainparticles .particles > .c2 {
-  background-image: url("http://i.imgur.com/uz2XCjs.png");
+  background-image: url('../img/main/2.png');
   width: 8%;
   margin-left: -0.4%;
 }
 
 .mainparticles .particles > .c3 {
-  background-image: url("http://i.imgur.com/CYIZx1n.png");
+  background-image: url('../img/main/3.png');
   width: 10%;
   margin-left: -3.7%;
 }
 
 .mainparticles .particles > .c4 {
-  background-image: url("http://i.imgur.com/PoFFeDJ.png");
+  background-image: url('../img/main/4.png');
   width: 6%;
   margin-left: -3.6%;
   height: 56% !important;
@@ -184,25 +184,25 @@ section.section table img {
 }
 
 .mainparticles .particles > .c5 {
-  background-image: url("http://i.imgur.com/sazQmOy.png");
+  background-image: url('../img/main/5.png');
   width: 10%;
   margin-left: -3.5%;
 }
 
 .mainparticles .particles > .c6 {
-  background-image: url("http://i.imgur.com/8Bs9zj3.png");
+  background-image: url('../img/main/6.png');
   width: 14%;
   margin-left: -3.7%;
 }
 
 .mainparticles .particles > .c7 {
-  background-image: url("http://i.imgur.com/nIGtnQU.png");
+  background-image: url('../img/main/7.png');
   width: 9%;
   margin-left: -2.5%;
 }
 
 .mainparticles .particles > .c8 {
-  background-image: url("http://i.imgur.com/vkwoJy1.png");
+  background-image: url('../img/main/8.png');
   width: 9%;
   height: 49% !important;
   margin-bottom: 7.1%;
@@ -210,14 +210,14 @@ section.section table img {
 }
 
 .mainparticles .particles > .c9 {
-  background-image: url("http://i.imgur.com/3Zy3arQ.png");
+  background-image: url('../img/main/9.png');
   width: 6%;
   height: 46% !important;
   margin-left: -6.9%;
 }
 
 .mainparticles .particles > .c10 {
-  background-image: url("http://i.imgur.com/v8XyCNG.png");
+  background-image: url('../img/main/10.png');
   width: 8%;
   margin-left: -1%;
 }
@@ -368,6 +368,36 @@ section.section table img {
   width: 24%;
   height: 75%;
   margin-left: -3.5%;
+}
+
+/* SLIDE 7 */
+
+#s7 .particles > .c1 {
+  background-image: url('../img/7/1.png');
+  width: 14%;
+  height: 50%;
+  margin-bottom: 20%;
+}
+
+#s7 .particles > .c2 {
+  background-image: url('../img/7/2.png');
+  width: 25%;
+  height: 65%;
+  margin-bottom: 15%;
+  margin-left: -3%;
+}
+
+#s7 .particles > .c3 {
+  background-image: url('../img/7/3.png');
+  width: 17%;
+  margin-left: -1%;
+}
+
+#s7 .particles > .c4 {
+  background-image: url('../img/7/4.png');
+  width: 19%;
+  height: 74%;
+  margin-bottom: 7%;
 }
 
 /* animations */
