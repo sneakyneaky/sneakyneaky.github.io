@@ -400,6 +400,64 @@ section.section table img {
   margin-bottom: 5%;
 }
 
+#s8 .particles > .c1 {
+  background-image: url('../img/8/1.png');
+  height: 80%;
+  width: 14%;
+  margin-bottom: 7%;
+}
+
+#s8 .particles > .c2 {
+  background-image: url('../img/8/2.png');
+  width: 20%;
+  margin-left: -2%;
+}
+
+#s8 .particles > .c3 {
+  background-image: url('../img/8/3.png');
+  width: 21%;
+  height: 80%;
+  margin-bottom: 11%;
+  margin-left: -4.5%;
+}
+
+#s8 .particles > .c4 {
+  background-image: url('../img/8/4.png');
+  width: 13%;
+  height: 33%;
+  margin-bottom: 49%;
+  margin-left: -3.5%;
+}
+
+
+#s9 .particles > .c1 {
+  background-image: url('../img/9/1.png');
+  width: 20%;
+  height: 80%;
+  margin-bottom: 13%;
+}
+
+#s9 .particles > .c2 {
+  background-image: url('../img/9/2.png');
+  width: 18%;
+  height: 90%;
+  margin-bottom: 8%;
+  margin-left: -5%;
+}
+
+#s9 .particles > .c3 {
+  background-image: url('../img/9/3.png');
+  width: 23%;
+}
+
+#s9 .particles > .c4 {
+  background-image: url('../img/9/4.png');
+  width: 16%;
+  height: 50%;
+  margin-bottom: 38.5%;
+  margin-left: -2%;
+}
+
 /* animations */
 .bounceIn {
   -webkit-animation: bounceIn 1s ease;
