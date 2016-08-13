@@ -261,9 +261,9 @@ section.section table img {
 }
 
 .dualsection .dual > div:first-of-type > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .triangle {
