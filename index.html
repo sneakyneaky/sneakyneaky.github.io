@@ -202,6 +202,18 @@
       </section>
     </div>
     <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var particles = document.querySelectorAll('.r1-2 .particles');
+        for (var i = 0; i<particles.length; i++) {
+          var nImg = Math.floor(Math.random()*4)+1,
+          childParticles = particles[i].children;
+          for (var j = 0; j<childParticles.length; j++) {
+            childParticles[j].style.backgroundImage = 'url(\'img/'+(i+5)+'/'+nImg+'/'+(j+1)+'.png\')';
+          }
+        }
+        console.log('=====')
+      });
+
       var visitedPages = [0, 0, 0, 0, 0];
       for (var i = 0; i < visitedPages.length; i++) {
         visitedPages[i] = false;
@@ -219,9 +231,7 @@
            var elements = document.querySelector('#s'+index+' .particles').children;
            var iterator = 0;
            var particlesTimer = setInterval(function() {
-             console.log('interval');
              if(iterator<elements.length) {
-               console.log(iterator);
                elements[iterator].classList.add('bounceIn');
                elements[iterator].style.opacity = '0.6';
                iterator++;
