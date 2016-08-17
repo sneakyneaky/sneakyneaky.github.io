@@ -155,7 +155,7 @@ section.section table img {
 }
 
 .mainparticles .particles > div {
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .mainparticles .particles > .c1 {
@@ -499,7 +499,7 @@ section.section table img {
   }
 
   to {
-    opacity: 0.6;
+    opacity: 0.8;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
