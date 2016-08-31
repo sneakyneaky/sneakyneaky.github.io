@@ -16,9 +16,10 @@ body {
 section.section {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
-section.section h1 {
+section.section h1, .triple-table .table-title {
   font: normal small-caps 300 2.5em 'Comfortaa', 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -30,32 +31,42 @@ section.section:last-of-type {
   background: transparent url('../img/bottom.jpg') no-repeat 50% 100% / auto auto;
 }
 
-section.section table {
-  border-collapse: collapse;
+.triple-table {
+  display: flex;
+  flex-direction: row;
 }
 
-section.section .middle.triple-table {
-  width: 100%;
-  text-align: justify;
-}
-
-section.section .middle.triple-table h1 {
+.triple-table > div > .table-title {
   text-align: center;
 }
 
-section.section .middle.triple-table table {
+.triple-table > div > .table-desc {
+  text-align: justify;
+}
+
+.triple-table > div > .table-image {
+  height: 12vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.triple-table img {
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-section.section .triple-table td {
-  max-width: 25vw;
-  padding: 5px 20px;
+.triple-table > div {
+  width: 25vw;
+  display: block;
+  float: left;
 }
 
-section.section .triple-table td:not(:last-of-type) {
-  border-right: 2px solid #d8d8d8;
+.triple-table > div:not(:last-of-type) {
+  margin-right: 2vw;
 }
-
 
 section.section table img {
   width: 80%;
@@ -248,7 +259,7 @@ section.section table img {
 
 .dualsection .dual {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .dualsection .dual > div {
@@ -282,6 +293,11 @@ section.section table img {
   cursor: pointer;
   -webkit-animation: tada 1s ease;
   animation: tada 1s ease;
+}
+
+#s1 img {
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 #s2 {
@@ -602,5 +618,104 @@ section.section table img {
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+  }
+}
+
+
+/* MOBILE */
+@media all and (orientation: portrait) and (max-height: 799px),
+all and (orientation: portrait) and (max-width: 599px), {
+
+  .onepage-pagination {
+    display: none;
+  }
+
+  .middle.wide {
+    width: 90vw;
+  }
+
+  .triple-table {
+    flex-direction: column;
+  }
+
+  .triple-table > div {
+    width: 85vw;
+    max-height: 33vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .triple-table > div > .table-desc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .triple-table > div > .table-image {
+    display: none;
+  }
+
+  .triple-table > div > .table-title:not(:first-of-type) {
+    margin-top: 1vh;
+  }
+
+  .balls > div {
+    width: 19vw;
+    height: 19vw;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  #s3 p {
+    max-height: 50vh;
+    overflow: hidden;
+  }
+
+  .balls > div::after {
+    border-width: 0 3vw 4vw 3vw;
+  }
+
+  .dualsection .dual {
+    flex-direction: column;
+  }
+
+  .dualsection .dual > div {
+    width: 100% !important;
+  }
+}
+
+
+@media all and (orientation: landscape) and (max-height: 599px),
+all and (orientation: landscape) and (max-width: 799px) {
+  .onepage-pagination, .triple-table > div > .table-desc, .balls, #s3 h1 {
+    display: none;
+  }
+
+  .triple-table > div {
+    width: 30vw;
+  }
+
+  .wide {
+    width: 95vw !important;
+  }
+  .dual > div {
+    width: 50%;
+  }
+  .dualsection:nth-of-type(odd) .dual > div:first-of-type, .dualsection:nth-of-type(even) .dual > div:last-of-type {
+    width: 40%;
+  }
+
+  .dualsection:nth-of-type(odd) .dual > div:last-of-type, .dualsection:nth-of-type(even) .dual > div:first-of-type {
+    width: 60%;
+  }
+
+  .dualsection:nth-of-type(2n+1) .dual > div:last-of-type > *, .dualsection:nth-of-type(2n) .dual > div:first-of-type > * {
+    margin: 0;
+  }
+  .dualsection:nth-of-type(2n+1) .dual > div:last-of-type > h1, .dualsection:nth-of-type(2n) .dual > div:first-of-type > h1 {
+    font-size: 2em;
+  }
+
+  section.section:last-of-type {
+    background-size:  auto 100%;
   }
 }
